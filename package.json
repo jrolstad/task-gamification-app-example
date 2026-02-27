@@ -8,7 +8,10 @@
     "server": "cd server && node index.js",
     "client": "cd client && npx react-scripts start",
     "dev": "npx concurrently \"npm run server\" \"npm run client\"",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "test": "npm run test:server && npm run test:client",
+    "test:server": "cd server && npm test",
+    "test:client": "cd client && npm test"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"

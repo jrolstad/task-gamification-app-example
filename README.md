@@ -88,6 +88,28 @@ Navigate to [http://localhost:3000](http://localhost:3000) in your browser.
 | GET    | `/api/tasks/search?user_id=<id>&q=<query>` | Search tasks by title/description |
 | GET    | `/api/leaderboard`                    | Get top 50 users by points         |
 
+## Testing
+
+The project includes unit tests for both the server API (Jest + Supertest) and client components (React Testing Library + Jest).
+
+### Run all tests
+
+```bash
+npm test
+```
+
+### Run server tests only
+
+```bash
+npm run test:server
+```
+
+### Run client tests only
+
+```bash
+npm run test:client
+```
+
 ## Configuration
 
 | Variable | Default | Description              |
